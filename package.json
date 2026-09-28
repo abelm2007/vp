@@ -1,0 +1,31 @@
+{
+  "name": "vp",
+  "version": "1.0.0",
+  "description": "Veebiprogrammeerimise tundides tehtud veeb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://abelm2007@github.com/abelm2007/vp.git"
+  },
+  "keywords": [
+    "Node.Js",
+    "veeb",
+    "Tallinna",
+    "ülikool",
+    "DTI",
+    "üliõpilane",
+    "koolitöö"
+  ],
+  "author": "Marie Abel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abelm2007/vp/issues"
+  },
+  "homepage": "https://github.com/abelm2007/vp#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
