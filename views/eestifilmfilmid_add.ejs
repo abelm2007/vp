@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="utf-8">
+	<title>Marie Abel, veevbiprogrammeerimine</title>
+</head>
+<body>
+	<img src="pic/veebiprogrammeerimine_2026_TA.png" alt="">
+	<h1>Marie Abel, veebiprogrammeerimine</h1>
+	<h2><b>Eesti filmi lisamine</b></h2>
+	<p>Siin lehel saab andmebaasi lisada Eesti filme.</p>
+	<ul>
+		<li><a href="/">Tagasi avalehele</a></li>
+		<li><a href="/eestifilm">Eesti film</a></li>
+	</ul>
+	<hr>
+	<form method="POST" action="/eestifilm/filmid_add">
+		<label for="titleInput">Filmi pealkiri</label>
+		<input id="titleInput" name="titleInput" type="text" placeholder="Filmi pealkiri" value="<%= titleInput %>" required>
+		<br>
+		<label for="yearInput">Linastumisaasta</label>
+		<input id="yearInput" name="yearInput" type="number" value="<%= yearInput %>" required>
+		<br>
+		<label for="durationInput">Kestus minutites</label>
+		<input id="durationInput" name="durationInput" type="number" value="<%= durationInput %>" required>
+		<br>
+		<label for="descriptionInput">Filmi kirjeldus</label>
+		<textarea id="descriptionInput" name="descriptionInput"><%= descriptionInput %></textarea>
+		<br>
+		<input type="submit" value="Salvesta">
+	</form>
+	<p>
+		<%= notice %>
+	</p>
+</body>
+</html>

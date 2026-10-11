@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="utf-8">
+	<title>Marie Abel, veevbiprogrammeerimine</title>
+</head>
+<body>
+	<img src="pic/veebiprogrammeerimine_2026_TA.png" alt="">
+	<h1>Marie Abel, veebiprogrammeerimine</h1>
+	<h2><b>Eesti filmiga seotud ametid</b></h2>
+	<p>Siin lehel saab andmebaasi lisada Eesti filmiga seotud ameteid.</p>
+	<ul>
+		<li><a href="/">Tagasi avalehele</a></li>
+		<li><a href="/eestifilm">Eesti film</a></li>
+	</ul>
+	<hr>
+	</form method="POST" action="/eestifilm/amet_add">
+	<label for="titleInput">Ameti nimi</label>
+	<input id="titleInput" name="titleInput" type="text" placeholder="Amet.." value="<%= titleInput %>" required>
+	<br>
+	<label for="descriptionInput">Ameti kirjeldus</label>
+	<textarea id="descriptionInput" name="descriptionInput"><%= descriptionInput %></textarea>
+	<br>
+	<input type="submit" value="Salvesta">
+	</form>
+	<p>
+		<%= notice %>
+	</p>
+</body>
+</html>

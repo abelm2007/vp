@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+	<meta charset="utf-8">
+	<title>Marie Abel, veevbiprogrammeerimine</title>
+</head>
+<body>
+	<img src="pic/veebiprogrammeerimine_2026_TA.png" alt="">
+	<h1>Marie Abel, veebiprogrammeerimine</h1>
+	<h2><b>Eesti filmiga seotud inimesed</b></h2>
+	<p>Siin lehel saab andmebaasi lisada Eesti filmiga seotud inimesi.</p>
+	<ul>
+		<li><a href="/">Tagasi avalehele</a></li>
+		<li><a href="/eestifilm">Eesti film</a></li>
+	</ul>
+	<hr>
+	<form method="POST">
+		<label for="firstNameInput">Filmiinimese eesnimi</label>
+		<input id="firstNameInput" name="firstNameInput" type="text" placeholder="Eesnimi..." value="<%= firstNameInput %>"
+		required>
+		<br>
+		<label for="lastNameInput">Filmiinimese perekonnanimi</label>
+		<input id="lastNameInput" name="lastNameInput" type="text" placeholder="Perekonnanimi..." value="<%= lastNameInput %>"required>
+		<br>
+		<label for="bornInput">Filmiinimese sünnikuupäev</label>
+		<input id="bornInput" name="bornInput" type="date" value="<%= bornInput %>" required>
+		<br>
+		<label for="deceasedInput">Surmakuupäev</label>
+		<input id="deceasedInput" name="deceasedInput" type="date" value="<%= deceasedInput %>">
+		<br>
+		<input id="personSubmit" name="personSubmit" type="Submit" value="Salvesta">
+	</form>
+	<p>
+		<%= notice %>
+	</p>
+</body>
+</html>
